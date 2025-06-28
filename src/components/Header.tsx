@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import profileImg from "../assets/profileimg.jpg";
 
 interface HeaderProps {
   activeSection: string;
@@ -30,13 +31,14 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
       <div className="container mx-auto px-4 sm:px-6 py-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-gradient-to-r from-blue-400 to-purple-400 shadow-lg hover:scale-110 transition-transform duration-300">
+            <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-gradient-to-r from-blue-400 to-purple-400 shadow-lg hover:scale-110 transition-transform duration-300 animate-float-slow">
               <img
-                src="/src/assets/profileimg.jpg"
+                src={profileImg}
                 alt="Badal Singh"
                 className="w-full h-full object-cover"
                 onError={(e) => {
-                  e.currentTarget.src = "../src/assets/profileimg.jpg";
+                  e.currentTarget.src =
+                    "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400";
                 }}
               />
             </div>

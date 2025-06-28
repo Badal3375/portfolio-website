@@ -1,5 +1,6 @@
 import React from "react";
 import { Code, Database, Brain, Zap } from "lucide-react";
+import profileImg from "../assets/profileimg.jpg";
 
 const About: React.FC = () => {
   const highlights = [
@@ -91,11 +92,12 @@ const About: React.FC = () => {
                 <div className="text-center">
                   <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-full overflow-hidden border-4 border-gradient-to-r from-blue-400 to-purple-400 mb-4 shadow-lg animate-float-slow hover:scale-110 transition-transform duration-500">
                     <img
-                      src="/src/assets/profileimg.jpg"
+                      src={profileImg}
                       alt="Badal Singh"
                       className="w-full h-full object-cover"
                       onError={(e) => {
-                        e.currentTarget.src = "../src/assets/profileimg.jpg";
+                        e.currentTarget.src =
+                          "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400";
                       }}
                     />
                   </div>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ChevronDown, Github, Linkedin, Mail, Phone } from "lucide-react";
+import profileImg from "../assets/profileimg.jpg";
 
 const Hero: React.FC = () => {
   const [displayText, setDisplayText] = useState("");
@@ -87,11 +88,12 @@ const Hero: React.FC = () => {
           <div className="mb-6 sm:mb-8">
             <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 mx-auto rounded-full overflow-hidden border-4 border-gradient-to-r from-blue-400 to-purple-400 mb-6 shadow-2xl animate-float-slow hover:scale-110 transition-transform duration-500">
               <img
-                src="/src/assets/profileimg.jpg"
+                src={profileImg}
                 alt="Badal Singh"
                 className="w-full h-full object-cover"
                 onError={(e) => {
-                  e.currentTarget.src = "../src/assets/profileimg.jpg";
+                  e.currentTarget.src =
+                    "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400";
                 }}
               />
             </div>
