@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ChevronDown, Github, Linkedin, Mail, Phone } from "lucide-react";
 import profileImg from "../assets/profileimg.jpg";
+import Badalresume from "../assets/Badal_resume.pdf";
 
 const Hero: React.FC = () => {
   const [displayText, setDisplayText] = useState("");
@@ -156,7 +157,7 @@ const Hero: React.FC = () => {
               View My Work
             </button>
             <a
-              href="/src/assets/Badal_resume.pdf"
+              href={Badalresume}
               target="_blank"
               className="px-6 sm:px-8 py-3 border border-gray-600 rounded-full font-medium hover:border-gray-400 hover:bg-gray-800/50 transition-all duration-300 hover:scale-105 hover:shadow-lg text-sm sm:text-base"
               onError={(e) => {
