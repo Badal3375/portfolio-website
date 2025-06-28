@@ -95,7 +95,7 @@ const About: React.FC = () => {
                       alt="Badal Singh"
                       className="w-full h-full object-cover"
                       onError={(e) => {
-                        e.currentTarget.src = "../assets/profileimg.jpg";
+                        e.currentTarget.src = "../src/assets/profileimg.jpg";
                       }}
                     />
                   </div>

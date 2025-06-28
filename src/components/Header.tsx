@@ -36,8 +36,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
                 alt="Badal Singh"
                 className="w-full h-full object-cover"
                 onError={(e) => {
-                  e.currentTarget.src =
-                    "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400";
+                  e.currentTarget.src = "../src/assets/profileimg.jpg";
                 }}
               />
             </div>
